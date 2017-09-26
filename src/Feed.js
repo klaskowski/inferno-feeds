@@ -8,7 +8,7 @@ export default class Feed extends Component {
     return (
       <div class="feed">
         <h2>Christmas 2016</h2>
-        <p class="description">Enjoy your time! ❄❅❆</p>
+        <p class="description">{this.props.uuid.value}</p>
         <FeedProduct />
         <FeedProduct />
         <FeedProduct />

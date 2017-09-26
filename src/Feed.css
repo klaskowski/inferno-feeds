@@ -1,4 +1,4 @@
-.feed {
+x-feed::shadow .feed {
   max-width: 100%;
   display: block;
   float: none;

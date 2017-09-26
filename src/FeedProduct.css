@@ -1,5 +1,5 @@
 
-.product {
+x-feed::shadow .product {
     margin: 20px 10px;
     width: 50%;
     max-width: 300px;
@@ -8,35 +8,35 @@
   }
 
   @media (min-width: 768px){
-    .product {
+    x-feed::shadow .product {
       width: 33%;
     }
   }
 
   @media (min-width: 992px){
-    .product {
+    x-feed::shadow .product {
       width: 25%;
     }
   }
 
   @media (min-width: 1200px){
-    .product {
+    x-feed::shadow .product {
       width: 16.67%;
     }
   }
 
-  .product-cover {
+  x-feed::shadow .product-cover {
     height: auto;
   }
 
-  .product-cover img {
+  x-feed::shadow .product-cover img {
     max-width: 100%;
     height: auto;
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
   }
 
-  .product-cover .button-enqueue {
+  x-feed::shadow .product-cover .button-enqueue {
     position: relative;
     top: -50%;
     left: 50%;
@@ -45,7 +45,7 @@
     z-index: 99;
   }
 
-  .button-enqueue:before {
+  x-feed::shadow .button-enqueue:before {
     content: "";
     display: block;
     border-top: 10px solid transparent;
@@ -57,14 +57,14 @@
     margin: -10px 0 0 -5px;
   }
 
-  .button-enqueue {
+  x-feed::shadow .button-enqueue {
     color: #fff;
     background-color: rgba(0,0,0,.5);
     border: 2px solid;
     position: relative;
   }
 
-  .button {
+  x-feed::shadow .button {
     outline: none;
     display: inline-block;
     padding: 6px 12px;
@@ -87,7 +87,7 @@
     text-overflow: ellipsis;
   }
 
-  .button-circle {
+  x-feed::shadow .button-circle {
     display: none;
     border-radius: 50%;
     width: 40px;
@@ -97,7 +97,7 @@
     border-width: 2px;
   }
 
-  .product-type {
+  x-feed::shadow .product-type {
     max-width: 300px;
     width: 100%;
     box-sizing: border-box;
@@ -114,22 +114,22 @@
     font-size: calc(9px + 0.4vw); /* or 12px */
   }
 
-  .product-name, .artist-name {
+  x-feed::shadow .product-name, .artist-name {
     display: block;
     text-decoration: none;
   }
 
-  .product-name {
+  x-feed::shadow .product-name {
     color: #0f086d;
     font-size: 24px;
   }
 
-  .artist-name {
+  x-feed::shadow .artist-name {
     font-size: 14px;
     color: #9f9f9f;
   }
 
-  .duration {
+  x-feed::shadow .duration {
     font-size: 12px;
     line-height: 18px;
     border-radius: 12px;
@@ -137,7 +137,7 @@
     padding: 0 12px;
   }
 
-  .button-buy {
+  x-feed::shadow .button-buy {
     color: #fefefe;
     background-color: #0f086d;
     border-radius: 19px;
@@ -146,11 +146,11 @@
     line-height: 1;
   }
 
-  .button-buy path{
+  x-feed::shadow .button-buy path{
     fill: #fefefe;
   }
 
-  .button-buy span {
+  x-feed::shadow .button-buy span {
     line-height: 32px;
     vertical-align: top;
     padding: 5px;

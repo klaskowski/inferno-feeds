@@ -1,5 +1,8 @@
 body {
-  margin: 0;
+  margin: auto;
+  width: 96%;
+  max-width: 1600px;
   padding: 0;
+  background: #ebebeb;
   font-family: "Open Sans", "lucida grande", "Segoe UI", arial, verdana, "lucida sans unicode", tahoma, sans-serif;
 }

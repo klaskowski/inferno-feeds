@@ -37,7 +37,8 @@
     border-top-right-radius: 4px;
   }
 
-  .product-cover .button-enqueue {
+  .product-cover .button-enqueue,
+  .product-cover .button-dequeue {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -46,7 +47,8 @@
     z-index: 99;
   }
 
-  .button-enqueue:before {
+  .button-enqueue:before,
+  .button-dequeue:before {
     content: "";
     display: block;
     border-top: 10px solid transparent;
@@ -58,11 +60,18 @@
     margin: -10px 0 0 -5px;
   }
 
-  .button-enqueue {
+  .button-enqueue,
+  .button-dequeue, {
     color: #fff;
     background-color: rgba(0,0,0,.5);
     border: 2px solid;
     position: relative;
+  }
+
+  .product-cover .button-dequeue:before {
+    border: 8px solid #fff;
+    margin-top: -8px;
+    margin-left: -8px;
   }
 
   .button {

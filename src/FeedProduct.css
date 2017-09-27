@@ -45,6 +45,9 @@
     margin-left: -20px;
     margin-top: -20px;
     z-index: 99;
+    color: #fff;
+    background-color: rgba(0,0,0,.5);
+    border: 2px solid;
   }
 
   .button-enqueue:before,
@@ -58,14 +61,6 @@
     top: 50%;
     left: 50%;
     margin: -10px 0 0 -5px;
-  }
-
-  .button-enqueue,
-  .button-dequeue, {
-    color: #fff;
-    background-color: rgba(0,0,0,.5);
-    border: 2px solid;
-    position: relative;
   }
 
   .product-cover .button-dequeue:before {

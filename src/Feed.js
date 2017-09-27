@@ -4,20 +4,28 @@ import FeedProduct from './FeedProduct'
 import './Feed.css'
 
 export default class Feed extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {}
+    window.AllexisSDK.getFeed(this.props.uuid.value)
+    .then(feed => this.setState({feed}))
+  }
+
   render() {
-    return (
+    const {feed} = this.state;
+    if(feed) return (
       <div class="feed">
-        <h2>Christmas 2016</h2>
-        <p class="description">{this.props.uuid.value}</p>
-        <FeedProduct />
-        <FeedProduct />
-        <FeedProduct />
-        <FeedProduct />
-        <FeedProduct />
-        <FeedProduct />
-        <FeedProduct />
-        <FeedProduct />
+        {feed.name &&
+        <h2>{feed.name}</h2>
+        }
+        {feed.description &&
+        <p class="description">{feed.description}</p>
+        }
+        {feed.products.map(product =>
+          <FeedProduct product={product}/>
+        )}
       </div>
-    );
+    )
+    else return (<div>Loading...</div>)
   }
 }

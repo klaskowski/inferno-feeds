@@ -1,6 +1,6 @@
 
 .product {
-    margin: 20px 10px;
+    margin: 20px 20px 20px 0;
     width: 50%;
     max-width: 300px;
     float: left;
@@ -154,4 +154,10 @@
     line-height: 32px;
     vertical-align: top;
     padding: 5px;
+  }
+
+  .truncate-text {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
   }

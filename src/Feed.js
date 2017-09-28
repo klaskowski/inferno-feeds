@@ -1,5 +1,4 @@
 import Component from 'inferno-component';
-// import './registerServiceWorker';
 import FeedProduct from './FeedProduct'
 import './Feed.css'
 
